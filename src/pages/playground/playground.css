@@ -1,0 +1,97 @@
+.playground-outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: rgba(0,212,255,1); */
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.playground-inner-container {
+    width: 70vw;
+}
+
+.game-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.elapsed-time-container {
+    font-weight: bold;
+}
+
+.last-command-container {
+    font-weight: bold;
+}
+
+.last-command {
+    color: blue;
+}
+
+.start-listening-button {
+    background: #00ff84;
+    color: black;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.game-reset-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.game-reset-container button {
+    border: 2px solid #00ff84;
+    background: transparent;
+    color: black;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.playground-grid {
+    border: 2px solid black;
+    display: grid;
+    height: 75vh;
+    /* grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr); */
+    gap: 2px;
+    background: black;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    grid-column: span 1;
+}
+
+.grid-item.flower-item {
+    background: blue;
+}
+
+.grid-item.collector-item {
+    background: red;
+}
+
+.collector-item.up {
+    border-top: 10px solid #3aff00;
+}
+
+.collector-item.down {
+    border-bottom: 10px solid #3aff00;
+}
+
+.collector-item.left {
+    border-left: 10px solid #3aff00;
+}
+
+.collector-item.right {
+    border-right: 10px solid #3aff00;
+}

@@ -1,0 +1,67 @@
+.modal-outer-container {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-inner-container {
+    width: 85vw;
+    height: 92vh;
+    /* background: #0c0b0b; */
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    border-radius: 24px;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.modal-title {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.primary-btn-modal {
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 3px 6px rgba(255,255,255,0.16), 0 3px 6px rgba(255,255,255,0.23);
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primary-btn-modal:disabled {
+    background: #c6c6c6;
+    cursor: initial;
+    box-shadow: none;
+    color: #888;
+}
+
+input::placeholder {
+    opacity: .2; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: .2;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    opacity: .2;
+}

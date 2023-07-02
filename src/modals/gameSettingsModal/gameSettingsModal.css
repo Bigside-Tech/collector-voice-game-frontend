@@ -1,0 +1,25 @@
+.modal-form-container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.each-field-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.field-label {
+    min-width: 20vw;
+}
+
+.field-input input{
+    width: 25vw;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px;
+}

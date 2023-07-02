@@ -1,0 +1,23 @@
+.high-scores-container {
+    margin: 30px 0 60px 0;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.each-high-score-row {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed rgba(255,255,255,.15);
+}
+
+.each-high-score-row.header {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.high-score-field {
+    min-width: 20vw;
+    display: flex;
+    justify-content: center;
+}
